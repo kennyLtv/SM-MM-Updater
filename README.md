@@ -1,4 +1,4 @@
-[![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow&style=flat-square)](https://twitter.com/kennyLtv)
+.. image:: https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow&style=flat-square   :target: https://twitter.com/kennyLtv
 
 # Source Mod and Meta Mod Updater
 
