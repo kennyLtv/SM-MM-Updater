@@ -2,8 +2,11 @@
 # Source Mod and Meta Mod Updater
 
 # Requirements
-## This script requires WGET & cURL ##
+ This script requires WGET & cURL 
+
+# Usage
+I have written this with the intent of using it on Centos 7 it has not been tested on anyother OS
 
 To use this script edit DIRS with the correct paths. Please note that these need to be full paths like $HOME/s1
 
-I have written this with the intent of using it on Centos 7 it has not been tested on anyother OS
+
