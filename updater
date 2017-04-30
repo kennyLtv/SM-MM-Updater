@@ -1,0 +1,69 @@
+#!/bin/bash
+# @Author: Kenny Lindelof <contact@kennyl.tv>
+# @Date:   2017-04-29 17:09:32
+# @Last Modified by:   kennyL
+# @Last Modified time: 2017-04-29 23:48:29
+# @Repo: https://github.com/kennyLtv/SourceModUpdater
+DIRS=("$HOME/s1" "$HOME/s2")
+WORKING="UD_working"
+
+#
+# Please be sure to have the folling installed
+# CuRL 
+# wget
+# 
+
+# Working Directory For The Script
+mkdir $WORKING
+cd $WORKING
+
+# Getting the latest SourceMod 
+# 
+# SM_CURRENT Give the current version of SourceMod 
+echo Retrieving Current SourceMod
+echo
+SM_CURRENT=`curl -s http://www.sourcemod.net/smdrop/1.8/sourcemod-latest-linux`
+#Downloads the Current SM Version.
+wget -q "http://www.sourcemod.net/smdrop/1.8/$SM_CURRENT"
+tar -zxf $SM_CURRENT
+
+echo Determining the current Meta Mod Source Version
+echo
+## Determining the current MetaMod Version
+latestVer=$(curl -s 'http://metamodsource.net/mmsdrop/1.10/' |
+   grep -oP 'mmsource-[0-9].[0-9][0-9].[0-9]-git[0-9][0-9][0-9]+' |
+   sort -t. -rn -k1,1 -k2,2 -k3,3 | head -1)
+
+echo Downloading Meta Mod $latestVer
+echo
+## Getting the latest MetaMod 
+wget -q "http://metamodsource.net/mmsdrop/1.10/${latestVer}-linux.tar.gz"
+#Extracting MetaMod Source 
+tar -zxf ${latestVer}-linux.tar.gz
+
+echo Removing Extra Files
+echo
+# Removing Unwanted Files
+rm -fr $SM_CURRENT addons/sourcemod/configs ${latestVer}-linux.tar.gz
+
+cd ../
+
+echo Moving Files To Directories
+echo
+for i in "${DIRS[@]}"
+	do
+		cp -R $WORKING/addons $DIRS
+		cp -R $WORKING/cfg $DIRS
+	done;
+
+rm -fr $WORKING
+
+echo
+echo
+echo Looks like its completed 
+echo
+echo Source Mod Version: $SM_CURRENT 
+echo Meta Mod Version: $latestVer	 	
+echo
+echo Follow Me On Twitter: @kennyLtv 			
+echo
