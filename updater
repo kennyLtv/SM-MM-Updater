@@ -3,7 +3,7 @@
 # @Date:   2017-04-29 17:09:32
 # @Last Modified by:   kennyL
 # @Last Modified time: 2017-04-29 23:48:29
-# @Repo: https://github.com/kennyLtv/SourceModUpdater
+# @Repo: https://github.com/kennyLtv/SM-MM-Updater/
 DIRS=("$HOME/s1" "$HOME/s2")
 WORKING="UD_working"
 
