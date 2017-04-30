@@ -1,4 +1,4 @@
-[![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow&style=flat-square)](https://twitter.com/kennyLtv)  [![PayPal Donate](https://img.shields.io/badge/PayPal-Donate-blue.svg?style=flat-square
+[![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg??style=flat-square&label=Follow)](https://twitter.com/kennyLtv)  [![PayPal Donate](https://img.shields.io/badge/PayPal-Donate-blue.svg?style=flat-square
 )](paypal.me/kennyLtv)
 # Source Mod and Meta Mod Updater
 
