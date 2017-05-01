@@ -8,6 +8,3 @@
 I have written this with the intent of using it on Centos 7 it has not been tested on anyother OS
 
 To use this script edit DIRS with the correct paths. Please note that these need to be full paths like $HOME/s1
-
-
-https://img.shields.io/badge/%23%20Slack-Chat-brightgreen.svg?style=flat-square
