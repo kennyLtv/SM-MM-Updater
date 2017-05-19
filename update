@@ -2,14 +2,14 @@
 # @Author: Kenny Lindelof <contact@kennyl.tv>
 # @Date:   2017-04-29 17:09:32
 # @Last Modified by:   kennyL
-# @Last Modified time: 2017-04-29 23:48:29
-# @Repo: https://github.com/kennyLtv/SM-MM-Updater/
+# @Last Modified time: 2017-04-29 23:49:11
+# @Repo: https://github.com/kennyLtv/SourceModUpdater
 DIRS=("$HOME/s1" "$HOME/s2")
 WORKING="UD_working"
 
 #
 # Please be sure to have the folling installed
-# cURL 
+# CuRL 
 # wget
 # 
 
@@ -64,4 +64,6 @@ echo Looks like its completed
 echo
 echo Source Mod Version: $SM_CURRENT 
 echo Meta Mod Version: $latestVer	 	
+echo
+echo Follow Me On Twitter: @kennyLtv 			
 echo
