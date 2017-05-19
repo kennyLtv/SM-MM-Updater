@@ -17,7 +17,7 @@ This is how you set your server install path. You need to go up to the point on 
 Please note that the paths for your installs should be full paths so that it doesn't matter where you place the scripts.
 
 ### Why?
-I wrote the script because I got tired of Sourcemod overwriting my configs when I would update Source Mod due to me not paying attention while I did it. Also because I have like 6 servers to update it on.....
+I wrote this script because I got tired of Source Mod overwriting my configs when I would update Source Mod due to me not paying attention while I did it. Also because I have like 6 servers to update it on.....
 
 ## Authors
 
