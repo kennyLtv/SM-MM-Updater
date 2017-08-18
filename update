@@ -52,8 +52,8 @@ echo Moving Files To Directories
 echo
 for i in "${DIRS[@]}"
 	do
-		cp -R $WORKING/addons $DIRS
-		cp -R $WORKING/cfg $DIRS
+		cp -R $WORKING/addons $i
+		cp -R $WORKING/cfg $i
 	done;
 
 rm -fr $WORKING
